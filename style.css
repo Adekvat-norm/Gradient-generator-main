@@ -1,0 +1,53 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(141, 55, 55);
+  background-repeat: initial;
+}
+
+h2 {
+  text-shadow: 1px 1px 2px black;
+  animation: wavecolor 8s infinite alternate;
+}
+
+button {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 1px 1px 2px black;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes wavecolor {
+  0% {
+    color: aliceblue;
+  }
+  20% {
+    color: green;
+  }
+  40% {
+    color: yellow;
+  }
+  60% {
+    color: red;
+  }
+  80% {
+    color: brown;
+  }
+  100% {
+    color: black;
+  }
+}
